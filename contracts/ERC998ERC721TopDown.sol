@@ -1,9 +1,9 @@
 pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
-import "@openzeppelin/contracts/introspection/ERC165.sol";
+import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
-import "@openzeppelin/contracts/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "./interfaces/IERC998ERC721TopDown.sol";
 import "./interfaces/IERC998ERC721TopDownEnumerable.sol";
 import "./interfaces/IERC998ERC721BottomUp.sol";
@@ -117,7 +117,7 @@ contract ERC998ERC721TopDown is
             // Case 4: Token owner is user
             return
                 (ERC998_MAGIC_VALUE << 224) |
-                bytes32(uint256(rootOwnerAddress));
+                bytes32(uint256(uint160(rootOwnerAddress)));
         }
     }
 
@@ -605,7 +605,7 @@ contract ERC998ERC721TopDown is
         );
         return (
             (ERC998_MAGIC_VALUE << 224) |
-                bytes32(uint256(tokenIdToTokenOwner[parentTokenId])),
+                bytes32(uint256(uint160(tokenIdToTokenOwner[parentTokenId]))),
             parentTokenId
         );
     }

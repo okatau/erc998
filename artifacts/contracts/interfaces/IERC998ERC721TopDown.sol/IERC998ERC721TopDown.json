@@ -1,0 +1,334 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IERC998ERC721TopDown",
+  "sourceName": "contracts/interfaces/IERC998ERC721TopDown.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ReceivedChild",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "TransferChild",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getChild",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOfChild",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "parentTokenOwner",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "parentTokenId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "rootOwnerOf",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "rootOwner",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "rootOwnerOfChild",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "rootOwner",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fromTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "safeTransferChild",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fromTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "safeTransferChild",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fromTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferChild",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_fromTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_toContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_toTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_childContract",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_childTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "transferChildToParent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

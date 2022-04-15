@@ -1,43 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "D:\\Codes\\Solidity\\erc998\\test\\contracts\\Token.sol": {
-      "lastModificationDate": 1649943360565,
-      "contentHash": "9aa2ccb1be339b6a5f8aacd0cb6aa19e",
-      "sourceName": "contracts/Token.sol",
-      "solcConfig": {
-        "version": "0.8.9",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/token/ERC721/ERC721.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.9"
-      ],
-      "artifacts": [
-        "MyToken"
-      ]
-    },
     "D:\\Codes\\Solidity\\erc998\\test\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol": {
       "lastModificationDate": 1649942450520,
       "contentHash": "49295810dc45f300e5f84b4b50d88a59",
@@ -365,6 +328,261 @@
       ],
       "artifacts": [
         "IERC165"
+      ]
+    },
+    "D:\\Codes\\Solidity\\erc998\\test\\contracts\\ERC998ERC721TopDown.sol": {
+      "lastModificationDate": 1650032112819,
+      "contentHash": "db17a543c8db42dc647e4d6add26bda3",
+      "sourceName": "contracts/ERC998ERC721TopDown.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "./interfaces/IERC998ERC721TopDown.sol",
+        "./interfaces/IERC998ERC721TopDownEnumerable.sol",
+        "./interfaces/IERC998ERC721BottomUp.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ERC998ERC721TopDown"
+      ]
+    },
+    "D:\\Codes\\Solidity\\erc998\\test\\node_modules\\@openzeppelin\\contracts\\utils\\math\\SafeMath.sol": {
+      "lastModificationDate": 1649942450653,
+      "contentHash": "a6a9d6c1f662e922b82c1ba4d81cdd48",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\Codes\\Solidity\\erc998\\test\\contracts\\interfaces\\IERC998ERC721TopDown.sol": {
+      "lastModificationDate": 1650031888065,
+      "contentHash": "028e8aff3c8ab0cea99582ba03197c21",
+      "sourceName": "contracts/interfaces/IERC998ERC721TopDown.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "IERC998ERC721TopDown"
+      ]
+    },
+    "D:\\Codes\\Solidity\\erc998\\test\\contracts\\interfaces\\IERC998ERC721TopDownEnumerable.sol": {
+      "lastModificationDate": 1650031862846,
+      "contentHash": "c8fcbfc552ae2a6c36e70e3daa60e113",
+      "sourceName": "contracts/interfaces/IERC998ERC721TopDownEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "IERC998ERC721TopDownEnumerable"
+      ]
+    },
+    "D:\\Codes\\Solidity\\erc998\\test\\contracts\\interfaces\\IERC998ERC721BottomUp.sol": {
+      "lastModificationDate": 1650032045943,
+      "contentHash": "71b3f00fd6b656cc27102a277f5084d8",
+      "sourceName": "contracts/interfaces/IERC998ERC721BottomUp.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "IERC998ERC721BottomUp"
+      ]
+    },
+    "D:\\Codes\\Solidity\\erc998\\test\\contracts\\SampleERC721.sol": {
+      "lastModificationDate": 1650039893652,
+      "contentHash": "2b0238f05154646e9056db78726b414a",
+      "sourceName": "contracts/SampleERC721.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "SampleERC721"
+      ]
+    },
+    "D:\\Codes\\Solidity\\erc998\\test\\contracts\\Migrations.sol": {
+      "lastModificationDate": 1650030780127,
+      "contentHash": "bc5d2a325acfd4a12ab9dec54e57b59e",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "Migrations"
       ]
     }
   }
