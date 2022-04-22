@@ -36,4 +36,8 @@ contract SampleERC721 is ERC721 {
         address _owner = ownerOf(_tokenId);
         return _owner;
     }
+
+    function get1() external pure returns (uint256) {
+        return 1;
+    }
 }

@@ -514,8 +514,8 @@
       ]
     },
     "D:\\Codes\\Solidity\\erc998\\test\\contracts\\SampleERC721.sol": {
-      "lastModificationDate": 1650039893652,
-      "contentHash": "2b0238f05154646e9056db78726b414a",
+      "lastModificationDate": 1650617117280,
+      "contentHash": "edd2a63bba626158783772681433ff49",
       "sourceName": "contracts/SampleERC721.sol",
       "solcConfig": {
         "version": "0.8.9",
